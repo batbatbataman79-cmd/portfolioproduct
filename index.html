@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Владислав Королев — Product-minded Designer</title>
+  <meta name="description" content="Дизайнер, который думает метриками. Перехожу в Product Manager. Кейсы: Kit Access, Target Factory, Рокс.">
+
+  <!-- Шрифты: Manrope (заголовки) + Inter (текст) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= ШАПКА ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">ВК<span>.</span></a>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#portfolio">Кейсы</a>
+        <a href="#experience">Опыт</a>
+        <a href="#journal">Журнал</a>
+      </nav>
+      <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="btn btn--dark btn--sm">Связаться</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= БЛОК 1: HERO ================= -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <div class="eyebrow reveal">Product-minded Designer</div>
+          <h1 class="h1 hero__title reveal" data-delay="100">Владислав Королев</h1>
+          <p class="lead hero__lead reveal" data-delay="200">Дизайнер, который думает метриками. Перехожу в&nbsp;Product Manager.</p>
+
+          <!-- Счётчики -->
+          <div class="stats reveal" data-delay="300">
+            <div>
+              <div class="stat__num">3+ года</div>
+              <div class="stat__label">коммерческого опыта</div>
+            </div>
+            <div>
+              <div class="stat__num">3 продукта</div>
+              <div class="stat__label">Kit Access, Target Factory, Рокс</div>
+            </div>
+            <div>
+              <div class="stat__num">A/B-тест</div>
+              <div class="stat__label">с реальным результатом</div>
+            </div>
+          </div>
+
+          <div class="buttons reveal" data-delay="400">
+            <a href="#portfolio" class="btn btn--dark">Смотреть кейсы</a>
+            <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="btn btn--ghost">Связаться</a>
+          </div>
+        </div>
+
+        <!-- Фото: замените assets/photo-square.jpg на своё (квадратное) -->
+        <div class="hero__photo reveal" data-delay="200">
+          <img src="assets/photo-square.jpg" alt="Владислав Королев">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= БЛОК 2: ОБО МНЕ ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text">
+            <div class="eyebrow reveal">About me</div>
+            <h2 class="h2 reveal">Обо мне</h2>
+            <p class="reveal">Я не просто рисую интерфейсы — я управляю проектами, ставлю задачи, контролирую сроки и анализирую метрики. В Deford совмещаю роли дизайнера, верстальщика и Project Manager: веду проекты от брифа до запуска, работаю с CRM и интеграциями.</p>
+            <p class="reveal">Сейчас перехожу в Product Manager. Учусь думать как продакт: гипотезы, A/B-тесты, юнит-экономика, метрики. Преподавал веб-дизайн и вёрстку в Geekbrains — умею объяснять сложное простым языком.</p>
+          </div>
+
+          <!-- Фото/абстракция: замените assets/about-abstract.svg на свою картинку -->
+          <div class="about__media reveal" data-delay="150">
+            <img src="assets/about-abstract.svg" alt="">
+          </div>
+        </div>
+
+        <!-- Три цифры -->
+        <div class="facts">
+          <div class="fact reveal">
+            <div class="fact__num">3+</div>
+            <div class="fact__label">года коммерческого опыта</div>
+          </div>
+          <div class="fact reveal" data-delay="100">
+            <div class="fact__num">PM</div>
+            <div class="fact__label">функции в Deford</div>
+          </div>
+          <div class="fact reveal" data-delay="200">
+            <div class="fact__num">Преподаватель</div>
+            <div class="fact__label">Geekbrains</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= БЛОК 3: ПОРТФОЛИО ================= -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow reveal">Portfolio</div>
+          <h2 class="h2 reveal">Кейсы</h2>
+        </div>
+
+        <!-- Обложки: замените assets/cover-*.svg на свои изображения -->
+        <div class="grid-3">
+          <a href="cases/kit-access.html" class="work reveal">
+            <div class="work__cover"><img src="assets/cover-kit-access.svg" alt="Kit Access — обложка кейса"></div>
+            <div class="work__body">
+              <h3 class="h3">Kit Access</h3>
+              <span class="btn btn--ghost btn--sm">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="cases/target-factory.html" class="work reveal" data-delay="100">
+            <div class="work__cover"><img src="assets/cover-target-factory.svg" alt="Target Factory — обложка кейса"></div>
+            <div class="work__body">
+              <h3 class="h3">Target Factory</h3>
+              <span class="btn btn--ghost btn--sm">Подробнее</span>
+            </div>
+          </a>
+
+          <a href="cases/roks.html" class="work reveal" data-delay="200">
+            <div class="work__cover"><img src="assets/cover-roks.svg" alt="Рокс — обложка кейса"></div>
+            <div class="work__body">
+              <h3 class="h3">Рокс</h3>
+              <span class="btn btn--ghost btn--sm">Подробнее</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= БЛОК 4: ОПЫТ ================= -->
+    <section class="section" id="experience">
+      <div class="container exp__grid">
+        <div>
+          <div class="eyebrow reveal">Experience</div>
+          <h2 class="h2 reveal">Опыт</h2>
+        </div>
+
+        <!-- Каждая строка: компания / роль / период. Класс exp__item--now — текущее место -->
+        <ul class="exp__list">
+          <li class="exp__item exp__item--now reveal">
+            <div class="exp__company">Deford</div>
+            <div class="exp__role">Дизайнер сайтов / Верстальщик / Project Manager</div>
+            <div class="exp__period">Июнь 2024 — н.в.</div>
+          </li>
+          <li class="exp__item reveal">
+            <div class="exp__company">Perfluence</div>
+            <div class="exp__role">Дизайнер рекламных креативов</div>
+            <div class="exp__period">Апрель 2023 — Апрель 2024</div>
+          </li>
+          <li class="exp__item reveal">
+            <div class="exp__company">Geekbrains</div>
+            <div class="exp__role">Преподаватель веб-дизайна и вёрстки</div>
+            <div class="exp__period">Ноябрь 2022 — Ноябрь 2024</div>
+          </li>
+          <li class="exp__item reveal">
+            <div class="exp__company">Риэлторская компания «Моя семья»</div>
+            <div class="exp__role">Дизайнер</div>
+            <div class="exp__period">Ноябрь 2022 — Январь 2023</div>
+          </li>
+          <li class="exp__item reveal">
+            <div class="exp__company">БелДорНИИ</div>
+            <div class="exp__role">Инженер</div>
+            <div class="exp__period">2019 — 2021</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= БЛОК 5: БАННЕР CTA ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="dark banner reveal">
+          <div class="eyebrow">Open to work</div>
+          <h2 class="h2">Ищу роль Product Manager</h2>
+          <p class="muted">Открыт к предложениям Junior/Middle PM в стартапах и продуктовых командах.</p>
+          <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="btn btn--light">Написать в Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= БЛОК 6: PRODUCT JOURNAL ================= -->
+    <section class="section" id="journal">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow reveal">Product Journal</div>
+          <h2 class="h2 reveal">Заметки продакта</h2>
+        </div>
+
+        <!-- ЗАГЛУШКИ: href="#" замените на ссылки на заметки
+             (например journal/hypothesis.html, когда страницы появятся) -->
+        <div class="grid-3">
+          <article class="note reveal">
+            <span class="note__tag">Гипотеза</span>
+            <h3 class="h3">Короткий курс удерживает лучше</h3>
+            <p>Проверяю, доходят ли дети до конца 4 уроков с ручной проверкой ДЗ.</p>
+            <a href="#" class="btn btn--ghost btn--sm">Читать</a>
+          </article>
+
+          <article class="note reveal" data-delay="100">
+            <span class="note__tag">Проблема</span>
+            <h3 class="h3">AI заменяет ручную вёрстку</h3>
+            <p>Переупаковал курс: не «учим Tilda», а «учим ставить задачу AI и проверять результат».</p>
+            <a href="#" class="btn btn--ghost btn--sm">Читать</a>
+          </article>
+
+          <article class="note reveal" data-delay="200">
+            <span class="note__tag">Метрика</span>
+            <h3 class="h3">Готовность платить</h3>
+            <p>В конце курса спрашиваю родителей, готовы ли они купить продолжение.</p>
+            <a href="#" class="btn btn--ghost btn--sm">Читать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= БЛОК 7: ФУТЕР ================= -->
+  <footer class="dark footer">
+    <div class="container">
+      <h2 class="h2 reveal">Хотите обсудить PM-роль или&nbsp;проект?</h2>
+      <p class="footer__lead muted reveal">Напишите в Telegram — отвечу в течение дня.</p>
+      <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="btn btn--light reveal">Написать в Telegram</a>
+
+      <!-- Контакты -->
+      <div class="contacts">
+        <a href="https://t.me/mofyl" target="_blank" rel="noopener">Telegram: @mofyl</a>
+        <a href="tel:+375257103242">+375 (25) 710-32-42</a>
+        <a href="https://vladkorolev.tilda.ws" target="_blank" rel="noopener">vladkorolev.tilda.ws</a>
+        <a href="https://www.behance.net/batbatbata7b47" target="_blank" rel="noopener">behance.net/batbatbata7b47</a>
+      </div>
+      <div class="copyright">© <span id="year">2026</span> Владислав Королев</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

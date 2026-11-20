@@ -1,0 +1,12 @@
+<!-- Заглушка обложки Kit Access. Замените на свою картинку (jpg/png) и поправьте путь в HTML. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EDE7DD"/><stop offset="1" stop-color="#D9CFC0"/></linearGradient>
+  <linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C4A484"/><stop offset="1" stop-color="#A88866"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect x="0" y="640" width="1200" height="260" fill="#CFC3B1"/>
+  <rect x="430" y="300" width="340" height="340" rx="24" fill="#F5F3EF"/>
+  <circle cx="600" cy="470" r="70" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+  <rect x="586" y="470" width="28" height="80" rx="8" fill="#1A1A1A"/>
+  <ellipse cx="600" cy="652" rx="210" ry="18" fill="#B9AA94" opacity=".6"/>
+  <circle cx="900" cy="250" r="90" fill="url(#s)"/>
+</svg>
