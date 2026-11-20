@@ -74,9 +74,13 @@
           </div>
         </div>
 
-        <!-- Фото: замените assets/photo-hero.jpg (портрет на светлом фоне, ~#f3f3f3) -->
+        <!-- Фото: на компьютере — обрезка по плечи (photo-hero-desktop.jpg),
+             на мобильном — полный портрет (photo-hero.jpg). Фон фото — #f3f3f3 -->
         <div class="hero__photo">
-          <img src="assets/photo-hero.jpg" alt="Владислав Королев">
+          <picture>
+            <source media="(min-width: 769px)" srcset="assets/photo-hero-desktop.jpg">
+            <img src="assets/photo-hero.jpg" alt="Владислав Королев">
+          </picture>
         </div>
       </div>
     </section>
