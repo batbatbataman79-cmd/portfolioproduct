@@ -6,10 +6,10 @@
   <title>Владислав Королев — Product-minded Designer</title>
   <meta name="description" content="Дизайнер, который думает метриками. Перехожу в Product Manager. Кейсы: Kit Access, Target Factory, Рокс.">
 
-  <!-- Шрифты: Manrope (заголовки) + Inter (текст) -->
+  <!-- Шрифты: Inter Tight (заголовки) + Inter (текст) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,7 +25,9 @@
         <a href="#experience">Опыт</a>
         <a href="#journal">Журнал</a>
       </nav>
-      <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="btn btn--dark btn--sm">Связаться</a>
+      <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="link-arrow">Связаться
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
     </div>
   </header>
 
@@ -33,147 +35,206 @@
 
     <!-- ================= БЛОК 1: HERO ================= -->
     <section class="hero">
-      <div class="container hero__grid">
-        <div>
-          <div class="eyebrow reveal">Product-minded Designer</div>
-          <h1 class="h1 hero__title reveal" data-delay="100">Владислав Королев</h1>
-          <p class="lead hero__lead reveal" data-delay="200">Дизайнер, который думает метриками. Перехожу в&nbsp;Product Manager.</p>
+      <div class="hero__inner">
 
+        <!-- Вертикальная полоса слева: подпись — линия — год -->
+        <div class="hero__rail" aria-hidden="true">
+          <span>Product-minded Designer</span>
+          <i></i>
+          <span id="hero-year">2026</span>
+        </div>
+
+        <div class="hero__content">
           <!-- Счётчики -->
-          <div class="stats reveal" data-delay="300">
+          <div class="stats reveal">
             <div>
-              <div class="stat__num">3+ года</div>
-              <div class="stat__label">коммерческого опыта</div>
+              <div class="stat__num">3<sup>+</sup></div>
+              <div class="stat__label">года коммерческого опыта</div>
             </div>
             <div>
-              <div class="stat__num">3 продукта</div>
-              <div class="stat__label">Kit Access, Target Factory, Рокс</div>
+              <div class="stat__num">3</div>
+              <div class="stat__label">продукта — Kit Access, Target Factory, Рокс</div>
             </div>
             <div>
-              <div class="stat__num">A/B-тест</div>
-              <div class="stat__label">с реальным результатом</div>
+              <div class="stat__num">A/B</div>
+              <div class="stat__label">тест с реальным результатом</div>
             </div>
           </div>
 
-          <div class="buttons reveal" data-delay="400">
-            <a href="#portfolio" class="btn btn--dark">Смотреть кейсы</a>
-            <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="btn btn--ghost">Связаться</a>
+          <h1 class="hero__title reveal" data-delay="100">Владислав<br>Королев</h1>
+          <p class="hero__lead reveal" data-delay="200">— Дизайнер, который думает метриками. Перехожу в&nbsp;Product Manager.</p>
+
+          <div class="hero__actions reveal" data-delay="300">
+            <a href="#portfolio" class="link-arrow">Смотреть кейсы
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+            <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="link-arrow">Связаться
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- Фото: замените assets/photo-square.jpg на своё (квадратное) -->
-        <div class="hero__photo reveal" data-delay="200">
-          <img src="assets/photo-square.jpg" alt="Владислав Королев">
+        <!-- Фото: замените assets/photo-hero.jpg (портрет на светлом фоне, ~#f3f3f3) -->
+        <div class="hero__photo">
+          <img src="assets/photo-hero.jpg" alt="Владислав Королев">
         </div>
       </div>
     </section>
 
     <!-- ================= БЛОК 2: ОБО МНЕ ================= -->
     <section class="section" id="about">
-      <div class="container">
-        <div class="about__grid">
-          <div class="about__text">
-            <div class="eyebrow reveal">About me</div>
-            <h2 class="h2 reveal">Обо мне</h2>
-            <p class="reveal">Я не просто рисую интерфейсы — я управляю проектами, ставлю задачи, контролирую сроки и анализирую метрики. В Deford совмещаю роли дизайнера, верстальщика и Project Manager: веду проекты от брифа до запуска, работаю с CRM и интеграциями.</p>
-            <p class="reveal">Сейчас перехожу в Product Manager. Учусь думать как продакт: гипотезы, A/B-тесты, юнит-экономика, метрики. Преподавал веб-дизайн и вёрстку в Geekbrains — умею объяснять сложное простым языком.</p>
-          </div>
+      <div class="container about__grid">
 
-          <!-- Фото/абстракция: замените assets/about-abstract.svg на свою картинку -->
-          <div class="about__media reveal" data-delay="150">
-            <img src="assets/about-abstract.svg" alt="">
+        <!-- Колонка 1: заголовок + абзац + декоративная стрелка -->
+        <div class="about__intro">
+          <h2 class="h2 reveal">Обо мне</h2>
+          <p class="reveal">Я не просто рисую интерфейсы — я управляю проектами, ставлю задачи, контролирую сроки и анализирую метрики. В Deford совмещаю роли дизайнера, верстальщика и Project Manager: веду проекты от брифа до запуска, работаю с CRM и интеграциями.</p>
+          <svg class="about__arrow" viewBox="0 0 240 260" fill="none" aria-hidden="true">
+            <path d="M14 250C10 150 70 70 200 48" stroke="currentColor" stroke-width="22" stroke-linecap="round"/>
+            <path d="M140 14 214 46 168 108" stroke="currentColor" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <!-- Колонка 2: белая карточка с цифрой и фото -->
+        <div class="about__card reveal" data-delay="100">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></svg>
+          </div>
+          <div class="about__big">3+</div>
+          <p class="about__card-label">года коммерческого опыта</p>
+          <!-- Фото: замените assets/photo-square.jpg -->
+          <div class="about__card-photo">
+            <img src="assets/photo-square.jpg" alt="Владислав Королев">
           </div>
         </div>
 
-        <!-- Три цифры -->
-        <div class="facts">
-          <div class="fact reveal">
-            <div class="fact__num">3+</div>
-            <div class="fact__label">года коммерческого опыта</div>
-          </div>
-          <div class="fact reveal" data-delay="100">
-            <div class="fact__num">PM</div>
-            <div class="fact__label">функции в Deford</div>
-          </div>
-          <div class="fact reveal" data-delay="200">
-            <div class="fact__num">Преподаватель</div>
-            <div class="fact__label">Geekbrains</div>
-          </div>
+        <!-- Колонка 3: картинка со стрелкой + два пункта -->
+        <div class="about__right">
+          <!-- Картинка-ссылка на кейсы: замените assets/about-abstract.svg -->
+          <a href="#portfolio" class="about__thumb reveal" data-delay="200" aria-label="Смотреть кейсы">
+            <img src="assets/about-abstract.svg" alt="">
+            <span class="circle-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </a>
+
+          <ul class="points">
+            <li class="point reveal">
+              <span class="point__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.5 5.5 4.5 9.5 10 10-5.5.5-9.5 4.5-10 10-.5-5.5-4.5-9.5-10-10 5.5-.5 9.5-4.5 10-10z"/></svg></span>
+              <p><strong>PM — функции в Deford.</strong> Сейчас перехожу в Product Manager. Учусь думать как продакт: гипотезы, A/B-тесты, юнит-экономика, метрики.</p>
+            </li>
+            <li class="point reveal" data-delay="100">
+              <span class="point__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.5 5.5 4.5 9.5 10 10-5.5.5-9.5 4.5-10 10-.5-5.5-4.5-9.5-10-10 5.5-.5 9.5-4.5 10-10z"/></svg></span>
+              <p><strong>Преподаватель Geekbrains.</strong> Преподавал веб-дизайн и вёрстку — умею объяснять сложное простым языком.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ================= БЛОК 3: ПОРТФОЛИО ================= -->
+    <!-- ================= БЛОК 3: КЕЙСЫ (горизонтальная лента) ================= -->
     <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow reveal">Portfolio</div>
-          <h2 class="h2 reveal">Кейсы</h2>
+      <div class="container cases-head">
+        <h2 class="h2 reveal">Кейсы</h2>
+        <div class="slider-btns">
+          <button class="slider-btn" type="button" data-slide="-1" aria-label="Назад">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </button>
+          <button class="slider-btn" type="button" data-slide="1" aria-label="Вперёд">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
         </div>
+      </div>
 
-        <!-- Обложки: замените assets/cover-*.svg на свои изображения -->
-        <div class="grid-3">
-          <a href="cases/kit-access.html" class="work reveal">
-            <div class="work__cover"><img src="assets/cover-kit-access.svg" alt="Kit Access — обложка кейса"></div>
-            <div class="work__body">
-              <h3 class="h3">Kit Access</h3>
-              <span class="btn btn--ghost btn--sm">Подробнее</span>
-            </div>
-          </a>
+      <!-- Обложки: замените assets/cover-*.svg на свои изображения -->
+      <div class="cases-track" id="cases-track">
+        <a href="cases/kit-access.html" class="case-card reveal">
+          <div class="case-card__cover">
+            <img src="assets/cover-kit-access.svg" alt="Kit Access — обложка кейса">
+            <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+          <div class="case-card__meta">
+            <h3 class="case-card__title">Kit Access</h3>
+            <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+        </a>
 
-          <a href="cases/target-factory.html" class="work reveal" data-delay="100">
-            <div class="work__cover"><img src="assets/cover-target-factory.svg" alt="Target Factory — обложка кейса"></div>
-            <div class="work__body">
-              <h3 class="h3">Target Factory</h3>
-              <span class="btn btn--ghost btn--sm">Подробнее</span>
-            </div>
-          </a>
+        <a href="cases/target-factory.html" class="case-card reveal" data-delay="100">
+          <div class="case-card__cover">
+            <img src="assets/cover-target-factory.svg" alt="Target Factory — обложка кейса">
+            <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+          <div class="case-card__meta">
+            <h3 class="case-card__title">Target Factory</h3>
+            <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+        </a>
 
-          <a href="cases/roks.html" class="work reveal" data-delay="200">
-            <div class="work__cover"><img src="assets/cover-roks.svg" alt="Рокс — обложка кейса"></div>
-            <div class="work__body">
-              <h3 class="h3">Рокс</h3>
-              <span class="btn btn--ghost btn--sm">Подробнее</span>
-            </div>
-          </a>
-        </div>
+        <a href="cases/roks.html" class="case-card reveal" data-delay="200">
+          <div class="case-card__cover">
+            <img src="assets/cover-roks.svg" alt="Рокс — обложка кейса">
+            <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+          <div class="case-card__meta">
+            <h3 class="case-card__title">Рокс</h3>
+            <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+        </a>
       </div>
     </section>
 
     <!-- ================= БЛОК 4: ОПЫТ ================= -->
     <section class="section" id="experience">
-      <div class="container exp__grid">
-        <div>
-          <div class="eyebrow reveal">Experience</div>
-          <h2 class="h2 reveal">Опыт</h2>
+      <div class="container">
+        <div class="exp__top">
+          <h2 class="exp__title reveal">Опыт</h2>
+          <div class="exp__intro reveal" data-delay="100">
+            <p>3+ года коммерческого опыта: дизайн сайтов и креативов, вёрстка, управление проектами и преподавание.</p>
+            <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="link-arrow">Связаться
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Каждая строка: компания / роль / период. Класс exp__item--now — текущее место -->
+        <!-- Строка: компания + период / роль / теги -->
         <ul class="exp__list">
-          <li class="exp__item exp__item--now reveal">
-            <div class="exp__company">Deford</div>
+          <li class="exp__item reveal">
+            <div>
+              <div class="exp__company">Deford</div>
+              <div class="exp__period">Июнь 2024 — н.в.</div>
+            </div>
             <div class="exp__role">Дизайнер сайтов / Верстальщик / Project Manager</div>
-            <div class="exp__period">Июнь 2024 — н.в.</div>
+            <div class="tags"><span class="tag">Дизайн</span><span class="tag">Вёрстка</span><span class="tag">PM</span></div>
           </li>
           <li class="exp__item reveal">
-            <div class="exp__company">Perfluence</div>
+            <div>
+              <div class="exp__company">Perfluence</div>
+              <div class="exp__period">Апрель 2023 — Апрель 2024</div>
+            </div>
             <div class="exp__role">Дизайнер рекламных креативов</div>
-            <div class="exp__period">Апрель 2023 — Апрель 2024</div>
+            <div class="tags"><span class="tag">Креативы</span></div>
           </li>
           <li class="exp__item reveal">
-            <div class="exp__company">Geekbrains</div>
+            <div>
+              <div class="exp__company">Geekbrains</div>
+              <div class="exp__period">Ноябрь 2022 — Ноябрь 2024</div>
+            </div>
             <div class="exp__role">Преподаватель веб-дизайна и вёрстки</div>
-            <div class="exp__period">Ноябрь 2022 — Ноябрь 2024</div>
+            <div class="tags"><span class="tag">Преподавание</span></div>
           </li>
           <li class="exp__item reveal">
-            <div class="exp__company">Риэлторская компания «Моя семья»</div>
+            <div>
+              <div class="exp__company">Риэлторская компания «Моя семья»</div>
+              <div class="exp__period">Ноябрь 2022 — Январь 2023</div>
+            </div>
             <div class="exp__role">Дизайнер</div>
-            <div class="exp__period">Ноябрь 2022 — Январь 2023</div>
+            <div class="tags"><span class="tag">Дизайн</span></div>
           </li>
           <li class="exp__item reveal">
-            <div class="exp__company">БелДорНИИ</div>
+            <div>
+              <div class="exp__company">БелДорНИИ</div>
+              <div class="exp__period">2019 — 2021</div>
+            </div>
             <div class="exp__role">Инженер</div>
-            <div class="exp__period">2019 — 2021</div>
+            <div class="tags"><span class="tag">Инженерия</span></div>
           </li>
         </ul>
       </div>
@@ -183,7 +244,6 @@
     <section class="section">
       <div class="container">
         <div class="dark banner reveal">
-          <div class="eyebrow">Open to work</div>
           <h2 class="h2">Ищу роль Product Manager</h2>
           <p class="muted">Открыт к предложениям Junior/Middle PM в стартапах и продуктовых командах.</p>
           <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="btn btn--light">Написать в Telegram</a>
@@ -195,7 +255,6 @@
     <section class="section" id="journal">
       <div class="container">
         <div class="section-head">
-          <div class="eyebrow reveal">Product Journal</div>
           <h2 class="h2 reveal">Заметки продакта</h2>
         </div>
 

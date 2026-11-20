@@ -40,7 +40,21 @@
     onScroll();
   }
 
-  /* ---------- 3. Текущий год в футере ---------- */
-  var year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
+  /* ---------- 3. Текущий год (футер и вертикальная подпись в hero) ---------- */
+  ['year', 'hero-year'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = new Date().getFullYear();
+  });
+
+  /* ---------- 4. Лента кейсов: кнопки «назад / вперёд» ---------- */
+  var track = document.getElementById('cases-track');
+  if (track) {
+    document.querySelectorAll('[data-slide]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = track.querySelector('.case-card');
+        var step = card ? card.getBoundingClientRect().width + 28 : track.clientWidth * 0.8;
+        track.scrollBy({ left: step * parseInt(btn.getAttribute('data-slide'), 10), behavior: 'smooth' });
+      });
+    });
+  }
 })();
