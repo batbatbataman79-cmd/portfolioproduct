@@ -252,40 +252,80 @@
       </div>
     </section>
 
-    <!-- ================= БЛОК 5.1: НАВЫКИ (тёмный, как баннер) =================
-         Группы и теги — правьте прямо здесь, один <span class="skill"> = один навык -->
+    <!-- ================= БЛОК 5.1: НАВЫКИ =================
+         Слева — навыки со шкалами (процент меняется в двух местах: --val и подпись),
+         справа — цифры и цитата. -->
     <section class="section" id="skills">
-      <div class="container">
-        <div class="dark skills reveal">
-          <h2 class="h2">Навыки</h2>
-          <p class="muted skills__lead">Дизайн, вёрстка и управление проектами — с продуктовым взглядом на метрики.</p>
+      <div class="container skills">
 
-          <div class="skills__grid">
-            <div class="skills__group">
-              <h3 class="skills__title">Продукт</h3>
-              <div class="skills__list">
-                <span class="skill">Гипотезы</span><span class="skill">A/B-тесты</span><span class="skill">Метрики</span><span class="skill">Юнит-экономика</span>
-              </div>
+        <!-- Левая колонка: навыки и инструменты -->
+        <div class="skills__col">
+          <h2 class="skills__heading reveal">Навыки и инструменты</h2>
+          <!-- ПРОЦЕНТЫ — самооценка, поставьте свои -->
+          <ul class="skill-rows">
+            <li class="skill-row reveal" data-delay="0">
+              <span class="skill-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></span>
+              <span class="skill-row__name">Дизайн сайтов</span>
+              <span class="skill-row__bar"><i style="--val: 90%"></i></span>
+              <span class="skill-row__val">90%</span>
+            </li>
+            <li class="skill-row reveal" data-delay="60">
+              <span class="skill-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></span>
+              <span class="skill-row__name">UI / UX</span>
+              <span class="skill-row__bar"><i style="--val: 85%"></i></span>
+              <span class="skill-row__val">85%</span>
+            </li>
+            <li class="skill-row reveal" data-delay="120">
+              <span class="skill-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span>
+              <span class="skill-row__name">Вёрстка — HTML/CSS, Tilda</span>
+              <span class="skill-row__bar"><i style="--val: 90%"></i></span>
+              <span class="skill-row__val">90%</span>
+            </li>
+            <li class="skill-row reveal" data-delay="180">
+              <span class="skill-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 12l2 2 4-4"/></svg></span>
+              <span class="skill-row__name">Project management</span>
+              <span class="skill-row__bar"><i style="--val: 85%"></i></span>
+              <span class="skill-row__val">85%</span>
+            </li>
+            <li class="skill-row reveal" data-delay="240">
+              <span class="skill-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></svg></span>
+              <span class="skill-row__name">Метрики и A/B-тесты</span>
+              <span class="skill-row__bar"><i style="--val: 70%"></i></span>
+              <span class="skill-row__val">70%</span>
+            </li>
+            <li class="skill-row reveal" data-delay="300">
+              <span class="skill-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v10H4zM8 20h8M12 16v4"/></svg></span>
+              <span class="skill-row__name">Преподавание</span>
+              <span class="skill-row__bar"><i style="--val: 85%"></i></span>
+              <span class="skill-row__val">85%</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Правая колонка: опыт в цифрах + цитата -->
+        <div class="skills__col">
+          <h2 class="skills__heading reveal">Опыт в цифрах</h2>
+          <div class="impact reveal" data-delay="100">
+            <div class="impact__item">
+              <div class="impact__num">3<sup>+</sup></div>
+              <div class="impact__label">года коммерческого опыта</div>
             </div>
-            <div class="skills__group">
-              <h3 class="skills__title">Дизайн</h3>
-              <div class="skills__list">
-                <span class="skill">Дизайн сайтов</span><span class="skill">UI/UX</span><span class="skill">Рекламные креативы</span><span class="skill">Прототипы</span>
-              </div>
+            <div class="impact__item">
+              <div class="impact__num">3</div>
+              <div class="impact__label">продукта в портфолио</div>
             </div>
-            <div class="skills__group">
-              <h3 class="skills__title">Вёрстка</h3>
-              <div class="skills__list">
-                <span class="skill">HTML / CSS</span><span class="skill">Tilda</span><span class="skill">AI-инструменты</span>
-              </div>
-            </div>
-            <div class="skills__group">
-              <h3 class="skills__title">Управление</h3>
-              <div class="skills__list">
-                <span class="skill">Project management</span><span class="skill">Постановка задач</span><span class="skill">Контроль сроков</span><span class="skill">CRM и интеграции</span><span class="skill">Преподавание</span>
-              </div>
+            <div class="impact__item">
+              <div class="impact__num">5</div>
+              <div class="impact__label">мест работы</div>
             </div>
           </div>
+
+          <!-- Цитата: замените на свою -->
+          <figure class="quote reveal" data-delay="200">
+            <span class="quote__mark" aria-hidden="true">“</span>
+            <blockquote>Дизайн — это не то, как вещь выглядит, а то, как она работает.</blockquote>
+            <figcaption>Стив Джобс</figcaption>
+          </figure>
         </div>
       </div>
     </section>
