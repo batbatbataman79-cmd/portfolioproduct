@@ -8,7 +8,7 @@
   /* Цвета */
   --bg: #F3F3F3;          /* фон всего сайта */
   --text: #1A1A1A;        /* основной текст */
-  --accent: #C4A484;      /* акцент */
+  --accent: #FF6B1A;      /* акцент (оранжевый) */
   --muted: #6B6B6B;       /* вторичный текст */
   --dark: #1A1A1A;        /* тёмный блок */
   --on-dark: #F3F3F3;     /* текст на тёмном */
@@ -231,8 +231,9 @@ h1, h2, h3 {
   object-fit: contain;
   object-position: bottom right;
   filter: grayscale(1);
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 14%, #000 88%, transparent 100%);
-          mask-image: linear-gradient(to right, transparent 0, #000 14%, #000 88%, transparent 100%);
+  /* Плавное растворение снизу — фото «уходит» в фон под собой */
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
 }
 
 /* =========================================================
@@ -245,7 +246,6 @@ h1, h2, h3 {
   align-items: start;
 }
 .about__intro p { font-size: 19px; color: var(--muted); line-height: 1.6; }
-.about__arrow { width: 70%; max-width: 240px; margin: 72px 0 0 25%; color: #E2E2E2; }
 
 /* Центральная белая карточка */
 .about__card {
@@ -632,12 +632,11 @@ h1, h2, h3 {
     width: 100%; height: auto;
     max-width: 480px;
     margin: 0 auto;
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 12%, #000 88%, transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0, #000 12%, #000 88%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
   }
 
   .about__grid, .about__right { grid-template-columns: 1fr; gap: 40px; }
-  .about__arrow { display: none; }
   .about__thumb { aspect-ratio: 16 / 9; }
 
   .case-card__title { font-size: 28px; }
