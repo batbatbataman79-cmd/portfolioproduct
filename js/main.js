@@ -57,4 +57,23 @@
       });
     });
   }
+
+  /* ---------- 5. Оглавление статьи: подсветка текущего раздела ---------- */
+  var tocLinks = document.querySelectorAll('.toc__list a');
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    var byId = {};
+    tocLinks.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var tocObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        tocLinks.forEach(function (a) { a.classList.remove('is-active'); });
+        var link = byId[entry.target.id];
+        if (link) link.classList.add('is-active');
+      });
+    }, { rootMargin: '-100px 0px -65% 0px' });
+    Object.keys(byId).forEach(function (id) {
+      var h = document.getElementById(id);
+      if (h) tocObserver.observe(h);
+    });
+  }
 })();
