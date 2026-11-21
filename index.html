@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Владислав Королев — Product-minded Designer</title>
-  <meta name="description" content="Product-minded Designer — дизайнер, который думает метриками. Кейсы: Kit Access, Target Factory, Рокс.">
+  <meta name="description" content="Product-minded Designer — дизайнер, который думает метриками. Портфолио и кейсы.">
 
   <!-- Шрифты: Inter Tight (заголовки) + Inter (текст) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,12 +49,8 @@
           <!-- Счётчики -->
           <div class="stats reveal">
             <div>
-              <div class="stat__num">3<sup>+</sup></div>
+              <div class="stat__num">4<sup>+</sup></div>
               <div class="stat__label">года коммерческого опыта</div>
-            </div>
-            <div>
-              <div class="stat__num">3</div>
-              <div class="stat__label">продукта — Kit Access, Target Factory, Рокс</div>
             </div>
             <div>
               <div class="stat__num">A/B</div>
@@ -101,7 +97,7 @@
           <div class="icon-circle">
             <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></svg>
           </div>
-          <div class="about__big">3+</div>
+          <div class="about__big">4+</div>
           <p class="about__card-label">года коммерческого опыта</p>
           <!-- Фото: замените assets/photo-about.jpg -->
           <div class="about__card-photo">
@@ -111,9 +107,9 @@
 
         <!-- Колонка 3: картинка со стрелкой + два пункта -->
         <div class="about__right">
-          <!-- Картинка-ссылка на кейсы: замените assets/about-abstract.svg -->
+          <!-- Фото-ссылка на кейсы: замените assets/photo-thumb.jpg -->
           <a href="#portfolio" class="about__thumb reveal" data-delay="200" aria-label="Смотреть кейсы">
-            <img src="assets/about-abstract.svg" alt="">
+            <img src="assets/photo-thumb.jpg" alt="Владислав Королев">
             <span class="circle-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
           </a>
 
@@ -135,7 +131,8 @@
     <section class="section" id="portfolio">
       <div class="container cases-head">
         <h2 class="h2 reveal">Кейсы</h2>
-        <div class="slider-btns">
+        <div class="cases-head__actions">
+          <a href="cases/index.html" class="btn btn--ghost">Смотреть все кейсы</a>
           <button class="slider-btn" type="button" data-slide="-1" aria-label="Назад">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
           </button>
@@ -145,37 +142,59 @@
         </div>
       </div>
 
-      <!-- Обложки: замените assets/cover-*.svg на свои изображения -->
+      <!-- 5 последних кейсов. Обложки: assets/cases/<кейс>/01.jpg (или shot.jpg — скриншот сайта) -->
       <div class="cases-track" id="cases-track">
-        <a href="cases/kit-access.html" class="case-card reveal">
+        <a href="cases/map.html" class="case-card reveal" data-delay="0">
           <div class="case-card__cover">
-            <img src="assets/cover-kit-access.svg" alt="Kit Access — обложка кейса">
+            <img src="assets/cases/map/01.jpg" alt="МАП — обложка кейса" loading="lazy">
             <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
           </div>
           <div class="case-card__meta">
-            <h3 class="case-card__title">Kit Access</h3>
+            <h3 class="case-card__title">МАП</h3>
             <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
           </div>
         </a>
 
-        <a href="cases/target-factory.html" class="case-card reveal" data-delay="100">
+        <a href="cases/tureckaya.html" class="case-card reveal" data-delay="100">
           <div class="case-card__cover">
-            <img src="assets/cover-target-factory.svg" alt="Target Factory — обложка кейса">
+            <img src="assets/cases/tureckaya/01.jpg" alt="Галина Турецкая — обложка кейса" loading="lazy">
             <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
           </div>
           <div class="case-card__meta">
-            <h3 class="case-card__title">Target Factory</h3>
+            <h3 class="case-card__title">Галина Турецкая</h3>
             <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
           </div>
         </a>
 
-        <a href="cases/roks.html" class="case-card reveal" data-delay="200">
+        <a href="cases/enduro.html" class="case-card reveal" data-delay="200">
           <div class="case-card__cover">
-            <img src="assets/cover-roks.svg" alt="Рокс — обложка кейса">
+            <img src="assets/cases/enduro/01.jpg" alt="Enduro Life — обложка кейса" loading="lazy">
             <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
           </div>
           <div class="case-card__meta">
-            <h3 class="case-card__title">Рокс</h3>
+            <h3 class="case-card__title">Enduro Life</h3>
+            <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+        </a>
+
+        <a href="cases/spstudio.html" class="case-card reveal" data-delay="200">
+          <div class="case-card__cover">
+            <img src="assets/cases/spstudio/01.jpg" alt="SP studio — обложка кейса" loading="lazy">
+            <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+          <div class="case-card__meta">
+            <h3 class="case-card__title">SP studio</h3>
+            <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+        </a>
+
+        <a href="cases/alex-krown.html" class="case-card reveal" data-delay="200">
+          <div class="case-card__cover">
+            <img src="assets/cases/alex-krown/shot.jpg" alt="Alex Krown — обложка кейса" loading="lazy">
+            <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+          <div class="case-card__meta">
+            <h3 class="case-card__title">Alex Krown</h3>
             <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
           </div>
         </a>
@@ -188,7 +207,7 @@
         <div class="exp__top">
           <h2 class="exp__title reveal">Опыт</h2>
           <div class="exp__intro reveal" data-delay="100">
-            <p>3+ года коммерческого опыта: дизайн сайтов и креативов, вёрстка, управление проектами и преподавание.</p>
+            <p>4+ года коммерческого опыта: дизайн сайтов и креативов, вёрстка, управление проектами и преподавание.</p>
             <a href="https://t.me/mofyl" target="_blank" rel="noopener" class="link-arrow">Связаться
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
             </a>
@@ -307,12 +326,8 @@
           <h2 class="skills__heading reveal">Опыт в цифрах</h2>
           <div class="impact reveal" data-delay="100">
             <div class="impact__item">
-              <div class="impact__num">3<sup>+</sup></div>
+              <div class="impact__num">4<sup>+</sup></div>
               <div class="impact__label">года коммерческого опыта</div>
-            </div>
-            <div class="impact__item">
-              <div class="impact__num">3</div>
-              <div class="impact__label">продукта в портфолио</div>
             </div>
             <div class="impact__item">
               <div class="impact__num">5</div>
@@ -377,7 +392,6 @@
       <div class="contacts">
         <a href="https://t.me/mofyl" target="_blank" rel="noopener">Telegram: @mofyl</a>
         <a href="tel:+375257103242">+375 (25) 710-32-42</a>
-        <a href="https://vladkorolev.tilda.ws" target="_blank" rel="noopener">vladkorolev.tilda.ws</a>
         <a href="https://www.behance.net/batbatbata7b47" target="_blank" rel="noopener">behance.net/batbatbata7b47</a>
       </div>
       <div class="copyright">© <span id="year">2026</span> Владислав Королев</div>
