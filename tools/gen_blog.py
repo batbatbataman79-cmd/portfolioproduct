@@ -4,7 +4,7 @@
 import glob, html, re, os
 
 SRC = os.path.dirname(os.path.abspath(__file__)) + "/articles"
-OUT = "/root/projects/vk-portfolio/blog"
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "blog")
 os.makedirs(OUT, exist_ok=True)
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>'
 
