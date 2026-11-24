@@ -77,3 +77,24 @@
     });
   }
 })();
+// Интерактивная модель в кейсе Stroy-dom; данные примера не являются фактическими.
+(() => {
+  const form = document.getElementById('stroy-form');
+  if (!form) return;
+  const format = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 2 });
+  const update = () => {
+    if (!form.checkValidity()) return;
+    const value = name => Number(form.elements[name].value);
+    const leads = value('traffic') * value('conversion') / 100;
+    const qualified = leads * value('quality') / 100;
+    const deals = qualified * value('sales') / 100;
+    const revenue = deals * value('amount');
+    const results = { leads, qualified, deals, revenue, profit: revenue * value('margin') / 100 };
+    Object.entries(results).forEach(([name, number]) => {
+      document.querySelector(`[data-result="${name}"]`).textContent = format.format(number) + (name === 'revenue' || name === 'profit' ? ' BYN' : '');
+    });
+  };
+  form.addEventListener('input', update);
+  form.addEventListener('reset', () => setTimeout(update, 0));
+  update();
+})();
