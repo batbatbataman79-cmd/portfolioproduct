@@ -312,7 +312,9 @@ def case_page(c, nxt):
       </section>
 """
     if c['slug'] == 'stroy-dom':
-        gallery += open(os.path.join(ROOT, 'tools', 'stroy_dom_calculator.html'), encoding='utf-8').read()
+        blocks = open(os.path.join(ROOT, 'tools', 'stroy_dom_audit.html'), encoding='utf-8').read()
+        calculator = open(os.path.join(ROOT, 'tools', 'stroy_dom_calculator.html'), encoding='utf-8').read()
+        blocks = blocks.replace('<!-- CALCULATOR -->', calculator)
     return HEAD.format(title=f"{c['title']} — кейс · Владислав Королев", desc=html.escape(c["lead"])) + f"""
   <!-- ВНИМАНИЕ: тексты кейса — черновик по шаблону, поправьте своими словами.
        Цифры не выдуманы: где их нет — «метрики в процессе». -->
