@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=cases-2">
 </head>
 <body>
 
@@ -142,8 +142,18 @@
         </div>
       </div>
 
-      <!-- 5 последних кейсов. Обложки: assets/cases/<кейс>/01.jpg (или shot.jpg — скриншот сайта) -->
+      <!-- Карточки кейсов на главной; обложки лежат в assets -->
       <div class="cases-track" id="cases-track">
+        <a href="cases/stroy-dom.html" class="case-card">
+          <div class="case-card__cover">
+            <img src="assets/cover-stroy-dom.svg" alt="Stroy-dom.by — обложка кейса">
+            <span class="case-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+          <div class="case-card__meta">
+            <h3 class="case-card__title">Stroy-dom.by</h3>
+            <span class="case-card__more">Подробнее <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </div>
+        </a>
         <a href="cases/map.html" class="case-card reveal" data-delay="0">
           <div class="case-card__cover">
             <img src="assets/cases/map/01.jpg" alt="МАП — обложка кейса" loading="lazy">

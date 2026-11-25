@@ -349,6 +349,9 @@ h1, h2, h3 {
   scroll-padding: 0 max(24px, calc((100vw - var(--container)) / 2 + 24px));
 }
 .cases-track::-webkit-scrollbar { display: none; }
+/* Карточки ленты не смещаются при появлении и наведении во время листания. */
+.cases-track .case-card.reveal { opacity: 1; transform: none; }
+.cases-track .case-card:hover .case-card__cover img { transform: none; }
 
 .case-card {
   flex: 0 0 min(720px, 82vw);
