@@ -1031,3 +1031,30 @@ a.note:hover .btn { background: var(--accent); border-color: var(--accent); }
 .stroy-results div:last-child { background: var(--accent); color: var(--text); }
 .stroy-results div:last-child strong { color: var(--text); }
 @media (max-width: 768px) { .stroy-audit { margin-top: 60px; font-size: 16px; } .stroy-audit h1 { margin-top: 70px; } .stroy-calculator { padding: 24px; } }
+/* Навигация и схемы исследования Stroy-dom */
+.stroy-layout { display:grid; grid-template-columns: 220px minmax(0,1fr); gap:48px; align-items:start; margin-top:100px; }
+.stroy-toc { position:sticky; top:100px; max-height:calc(100vh - 120px); overflow:auto; }
+.stroy-audit { min-width:0; margin:0; max-width:none; }
+.stroy-audit h1 { scroll-margin-top:100px; }
+.swot-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.swot-cell { background:var(--card); padding:24px; border-radius:16px; }
+.swot-cell p { margin:0; color:var(--accent); }
+.swot-cell ul { margin-bottom:0; }
+.architecture { background:var(--card); padding:28px; border-radius:16px; margin:32px 0; text-align:center; }
+.arch-home { border:1px solid var(--accent); border-radius:12px; padding:16px; max-width:240px; margin:0 auto 32px; }
+.arch-columns { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.arch-columns div { display:grid; align-content:start; gap:8px; }
+.arch-columns strong,.arch-columns span,.arch-actions span { display:block; padding:12px; border:1px solid var(--line); border-radius:10px; }
+.arch-columns strong { background:var(--bg); }
+.arch-actions { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:24px; }
+.arch-actions span { border-color:var(--accent); }
+.seo-table td:last-child { color:var(--accent); font-weight:600; }
+.roadmap { overflow-x:auto; background:var(--card); border-radius:16px; padding:24px; margin:24px 0; }
+.roadmap-inner { min-width:720px; }
+.road-head { display:grid; grid-template-columns:180px repeat(12,1fr); text-align:center; font-size:14px; color:var(--muted); }
+.road-head span:first-child { text-align:left; }
+.road-row { display:grid; grid-template-columns:180px 1fr; align-items:center; gap:0; min-height:50px; font-size:15px; }
+.road-track { display:grid; grid-template-columns:repeat(12,1fr); background:repeating-linear-gradient(to right,var(--line) 0 1px, transparent 1px 8.333%); height:100%; align-items:center; }
+.road-track i { grid-column:var(--start) / span var(--length); height:18px; background:var(--accent); border-radius:5px; margin:0 3px; }
+@media(max-width:1024px) { .stroy-layout { grid-template-columns:1fr; gap:24px; } .stroy-toc { position:static; max-height:none; } }
+@media(max-width:600px) { .swot-grid,.arch-columns,.arch-actions { grid-template-columns:1fr; } .stroy-layout { margin-top:60px; } }
