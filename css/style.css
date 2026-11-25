@@ -1058,3 +1058,19 @@ a.note:hover .btn { background: var(--accent); border-color: var(--accent); }
 .road-track i { grid-column:var(--start) / span var(--length); height:18px; background:var(--accent); border-radius:5px; margin:0 3px; }
 @media(max-width:1024px) { .stroy-layout { grid-template-columns:1fr; gap:24px; } .stroy-toc { position:static; max-height:none; } }
 @media(max-width:600px) { .swot-grid,.arch-columns,.arch-actions { grid-template-columns:1fr; } .stroy-layout { margin-top:60px; } }
+
+/* Схематичная воронка продаж — без фактических значений */
+.sales-funnel { background: var(--card); border-radius: 16px; padding: clamp(20px, 4vw, 36px); margin: 28px 0; }
+.stroy-audit .sales-funnel__note { margin: 0; color: var(--muted); font-size: 14px; }
+.stroy-audit .sales-funnel__steps { list-style: none; padding: 0; margin: 22px 0; display: flex; flex-direction: column; align-items: center; }
+.sales-funnel__steps li { width: var(--width); background: var(--text); color: var(--on-dark); text-align: center; border-radius: 10px; padding: 12px; margin: 0; font-size: 16px; font-weight: 500; }
+.sales-funnel__steps li:not(:last-child) { margin-bottom: 28px; position: relative; }
+.sales-funnel__steps li:not(:last-child)::after { content: '↓'; position: absolute; top: 100%; left: 50%; color: var(--accent); transform: translateX(-50%); line-height: 28px; }
+.sales-funnel__steps li:nth-child(1) { --width: 100%; }
+.sales-funnel__steps li:nth-child(2) { --width: 92%; }
+.sales-funnel__steps li:nth-child(3) { --width: 84%; }
+.sales-funnel__steps li:nth-child(4) { --width: 76%; }
+.sales-funnel__steps li:nth-child(5) { --width: 68%; }
+.sales-funnel__steps li:nth-child(6) { --width: 60%; }
+.sales-funnel__steps li:nth-child(7) { --width: 52%; background: var(--accent); color: var(--text); }
+@media(max-width:600px) { .sales-funnel__steps li { min-width: 72%; font-size: 14px; } }
